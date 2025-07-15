@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Leyla's To-Do-Liste</title>
+  </head>
+<body>
+  <input type="text" id="aufgabeInput" placeholder="Neue Aufgabe eingeben"> 
+  <button  onclick="zeileHinzufuegen()">+ Neue Aufgabe</button>
+  <label for="filter">Anzeigen:</label>
+  <select id="filter" onchange="filtern()">
+    <option value="alle">Alle Aufgaben</option>
+    <option value="erledigt">Nur erledigte Aufgaben</option>
+    <option value="offen">Nur offene Aufgaben</option>
+  </select>
+  <img 
+  id="emojiGif"
+  src="eureka.gif" 
+  style="display: none; width: 150px; position: fixed; right: 150px; top: 100px;">
+
+  <table id="tbhinzufuegen">
+    <thead>
+      <tr>
+        <th>Nr.</th>
+        <th>To Do</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+
